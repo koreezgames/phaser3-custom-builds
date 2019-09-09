@@ -1,0 +1,30 @@
+{
+  "name": "phaser3-custom-builds",
+  "scripts": {
+    "build": "npm run phaser-no-sound-no-spine-no-physics && npm run phaser-no-sound-no-spine-physics && npm run phaser-no-sound-spine-no-physics && npm run phaser-no-sound-spine-physics && npm run phaser-sound-no-spine-no-physics && npm run phaser-sound-no-spine-physics && npm run phaser-sound-spine-no-physics && npm run phaser-sound-spine-physics",
+    "phaser-no-sound-no-spine-no-physics": "webpack --config config/phaser-no-sound-no-spine-no-physics.config.js",
+    "phaser-no-sound-no-spine-physics": "webpack --config config/phaser-no-sound-no-spine-physics.config.js",
+    "phaser-no-sound-spine-no-physics": "webpack --config config/phaser-no-sound-spine-no-physics.config.js",
+    "phaser-no-sound-spine-physics": "webpack --config config/phaser-no-sound-spine-physics.config.js",
+    "phaser-sound-no-spine-no-physics": "webpack --config config/phaser-sound-no-spine-no-physics.config.js",
+    "phaser-sound-no-spine-physics": "webpack --config config/phaser-sound-no-spine-physics.config.js",
+    "phaser-sound-spine-no-physics": "webpack --config config/phaser-sound-spine-no-physics.config.js",
+    "phaser-sound-spine-physics": "webpack --config config/phaser-sound-spine-physics.config.js"
+  },
+  "devDependencies": {
+    "case-sensitive-paths-webpack-plugin": "^2.2.0",
+    "clean-webpack-plugin": "^1.0.1",
+    "directory-tree": "^2.2.4",
+    "eslint": "^6.3.0",
+    "eslint-config-standard": "^13.0.1",
+    "eslint-plugin-node": "^9.2.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "phaser": "^3.19.0",
+    "prettier": "^1.18.2",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.39.3",
+    "webpack-bundle-analyzer": "^3.4.1",
+    "webpack-cli": "^3.3.7",
+    "webpack-merge": "^4.2.2"
+  }
+}
