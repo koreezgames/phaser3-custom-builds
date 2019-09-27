@@ -1,3 +1,4 @@
-var Phaser = require('./phaser-no-sound-no-spine-no-physics');
+require('./phaser-no-sound-no-spine-no-physics');
+require('plugins/spine/dist/SpineWebGLPlugin');
 
-Phaser.SpinePlugin = require('plugins/spine/dist/SpineWebGLPlugin');
+Phaser.SpinePlugin = window.SpinePlugin;
