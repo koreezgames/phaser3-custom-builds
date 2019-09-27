@@ -16,6 +16,8 @@ var Phaser = {
     Sprite: require('src/gameobjects/sprite/Sprite'),
     Text: require('src/gameobjects/text/static/Text'),
     Container: require('src/gameobjects/container/Container'),
+    Graphics: require('src/gameobjects/graphics/Graphics.js'),
+    Zone: require('src/gameobjects/zone/Zone.js'),
   },
   Loader: {
     FileTypes: {
@@ -39,8 +41,10 @@ var Phaser = {
   Time: require('src/time'),
   Tweens: require('src/tweens'),
   Animations: require('src/animations'),
-  Physics: {},
+  Geom: { Point: require('src/geom/point/Point'), Rectangle: require('src/geom/rectangle/Rectangle') },
 };
+
+Phaser.Geom.Rectangle.CopyFrom = require('src/geom/rectangle/CopyFrom');
 
 //   Merge in the consts
 
