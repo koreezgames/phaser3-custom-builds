@@ -15,7 +15,7 @@ module.exports = {
     path: path.resolve(`phaser/${phaserPackageJson.version}`),
     filename: '[name].js',
     library: 'Phaser',
-    libraryTarget: 'umd',
+    libraryTarget: 'var',
     sourceMapFilename: '[file].map',
     devtoolModuleFilenameTemplate: 'webpack:///[resource-path]',
     devtoolFallbackModuleFilenameTemplate: 'webpack:///[resource-path]?[hash]',

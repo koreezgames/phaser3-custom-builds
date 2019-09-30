@@ -2,14 +2,14 @@
   "name": "phaser3-custom-builds",
   "scripts": {
     "build": "npm run phaser-no-sound-no-spine-no-physics && npm run phaser-no-sound-no-spine-physics && npm run phaser-no-sound-spine-no-physics && npm run phaser-no-sound-spine-physics && npm run phaser-sound-no-spine-no-physics && npm run phaser-sound-no-spine-physics && npm run phaser-sound-spine-no-physics && npm run phaser-sound-spine-physics",
-    "phaser-no-sound-no-spine-no-physics": "webpack --config config/phaser-no-sound-no-spine-no-physics.config.js",
-    "phaser-no-sound-no-spine-physics": "webpack --config config/phaser-no-sound-no-spine-physics.config.js",
-    "phaser-no-sound-spine-no-physics": "webpack --config config/phaser-no-sound-spine-no-physics.config.js",
-    "phaser-no-sound-spine-physics": "webpack --config config/phaser-no-sound-spine-physics.config.js",
-    "phaser-sound-no-spine-no-physics": "webpack --config config/phaser-sound-no-spine-no-physics.config.js",
-    "phaser-sound-no-spine-physics": "webpack --config config/phaser-sound-no-spine-physics.config.js",
-    "phaser-sound-spine-no-physics": "webpack --config config/phaser-sound-spine-no-physics.config.js",
-    "phaser-sound-spine-physics": "webpack --config config/phaser-sound-spine-physics.config.js"
+    "phaser-no-sound-no-spine-no-physics": "webpack --config config/phaser-no-sound-no-spine-no-physics.config.js --env production --mode production --progress --colors",
+    "phaser-no-sound-no-spine-physics": "webpack --config config/phaser-no-sound-no-spine-physics.config.js --env production --mode production --progress --colors",
+    "phaser-no-sound-spine-no-physics": "webpack --config config/phaser-no-sound-spine-no-physics.config.js --env production --mode production --progress --colors",
+    "phaser-no-sound-spine-physics": "webpack --config config/phaser-no-sound-spine-physics.config.js --env production --mode production --progress --colors",
+    "phaser-sound-no-spine-no-physics": "webpack --config config/phaser-sound-no-spine-no-physics.config.js --env production --mode production --progress --colors",
+    "phaser-sound-no-spine-physics": "webpack --config config/phaser-sound-no-spine-physics.config.js --env production --mode production --progress --colors",
+    "phaser-sound-spine-no-physics": "webpack --config config/phaser-sound-spine-no-physics.config.js --env production --mode production --progress --colors",
+    "phaser-sound-spine-physics": "webpack --config config/phaser-sound-spine-physics.config.js --env production --mode production --progress --colors"
   },
   "devDependencies": {
     "case-sensitive-paths-webpack-plugin": "^2.2.0",
