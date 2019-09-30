@@ -2,6 +2,7 @@ var Phaser = require('./phaser-sound-no-spine-no-physics');
 require('plugins/spine/dist/SpineWebGLPlugin');
 
 Phaser.SpinePlugin = window.SpinePlugin;
+Phaser.GameObjects.Spine = require('plugins/spine/src/gameobject/SpineGameObject');
 
 //  Export it
 
