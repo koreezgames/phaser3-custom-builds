@@ -5,7 +5,7 @@
  */
 
 require('src/polyfills');
-require('plugins/spine/dist/SpineWebGLPlugin');
+require('plugins/spine/dist/SpineWebGLPluginDebug');
 
 var CONST = require('src/const');
 var Extend = require('src/utils/object/Extend');
